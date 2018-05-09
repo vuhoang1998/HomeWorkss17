@@ -70,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
         tablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+
                 tab.getIcon().setAlpha(255);
+                viewpager.setCurrentItem(tab.getPosition());
             }
 
             @Override
